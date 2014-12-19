@@ -1,0 +1,2 @@
+ICPSR requires a login. Data cannot be downloaded directly.
+
