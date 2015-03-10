@@ -1,2 +1,4 @@
 ICPSR requires a login. Data cannot be downloaded directly.
 
+Select files might be copied to
+git@github.com:ncrncornell/workflow.git

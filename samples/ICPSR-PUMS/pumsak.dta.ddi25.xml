@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This file was produced automatically by the OpenDataForge
+ Codebook XML Generator v2014.5.14.                       
+                                                          
+ For more information on OpenDataForge products and  	 
+ services,please visit www.openmetadata.org/dataforge.-->
+<ddi:codeBook version="2.5" ID="sVSUV742MTbfXuYo" elementVersion="1.0.0" xmlns:ddi="ddi:codebook:2_5">
+  <ddi:docDscr>
+    <ddi:citation>
+      <ddi:titlStmt>
+        <ddi:titl>pumsak.dta</ddi:titl>
+      </ddi:titlStmt>
+      <ddi:prodStmt>
+        <ddi:prodDate date="2014-12-10 09:38:22">2014-12-10 09:38:22</ddi:prodDate>
+        <ddi:software version="1.0.0">OpenDataForge:SledgeHammer</ddi:software>
+      </ddi:prodStmt>
+    </ddi:citation>
+  </ddi:docDscr>
+  <ddi:stdyDscr>
+    <ddi:citation>
+      <ddi:titlStmt>
+        <ddi:titl>pumsak.dta</ddi:titl>
+      </ddi:titlStmt>
+      <ddi:prodStmt/>
+    </ddi:citation>
+  </ddi:stdyDscr>
+  <ddi:fileDscr ID="cSce0uAhLe7GRa1t">
+    <ddi:fileTxt>
+      <ddi:fileName>pumsak.dta</ddi:fileName>
+      <ddi:dimensns>
+        <ddi:caseQnty>4999</ddi:caseQnty>
+        <ddi:varQnty>6</ddi:varQnty>
+      </ddi:dimensns>
+      <ddi:fileType>Stata</ddi:fileType>
+    </ddi:fileTxt>
+  </ddi:fileDscr>
+  <ddi:dataDscr>
+    <ddi:var ID="A3nqMiiiD2JpiY6A" name="pweight" files="cSce0uAhLe7GRa1t" dcml="0">
+      <ddi:location width="4" StartPos="1" EndPos="4"/>
+      <ddi:labl xml-lang="en">Person Weight</ddi:labl>
+      <ddi:varFormat type="character" schema="other" formatname="String">%9s</ddi:varFormat>
+    </ddi:var>
+    <ddi:var ID="IvCNciI6SRRun42w" name="pweight_num" files="cSce0uAhLe7GRa1t" dcml="0">
+      <ddi:location width="3" StartPos="5" EndPos="7"/>
+      <ddi:labl xml-lang="en">Person weight</ddi:labl>
+      <ddi:sumStat wgtd="not-wgtd" type="max">101</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="min">4</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="mean">19.789</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="mode">8.0</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="stdev">12.163</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="invd">0</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="vald">4999</ddi:sumStat>
+      <ddi:varFormat type="numeric" schema="other" formatname="Int">%10.0g</ddi:varFormat>
+    </ddi:var>
+    <ddi:var ID="v6kvCp13xSxx93eS" name="numrace" files="cSce0uAhLe7GRa1t" dcml="0">
+      <ddi:location width="1" StartPos="8" EndPos="8"/>
+      <ddi:labl xml-lang="en">Number of Major Race Groups Marked</ddi:labl>
+      <ddi:varFormat type="character" schema="other" formatname="String">%9s</ddi:varFormat>
+    </ddi:var>
+    <ddi:var ID="JI3O4X0mIGzijRdD" name="race1" files="cSce0uAhLe7GRa1t" dcml="0">
+      <ddi:location width="1" StartPos="9" EndPos="9"/>
+      <ddi:labl xml-lang="en">Race Recode 1</ddi:labl>
+      <ddi:varFormat type="character" schema="other" formatname="String">%9s</ddi:varFormat>
+    </ddi:var>
+    <ddi:var ID="u0AGKpTEsr4fpuLE" name="race2" files="cSce0uAhLe7GRa1t" dcml="0">
+      <ddi:location width="2" StartPos="10" EndPos="11"/>
+      <ddi:labl xml-lang="en">Race Recode 2</ddi:labl>
+      <ddi:varFormat type="character" schema="other" formatname="String">%9s</ddi:varFormat>
+    </ddi:var>
+    <ddi:var ID="vkYUjbJuFAnvrKVZ" name="specific_ak" files="cSce0uAhLe7GRa1t" dcml="0">
+      <ddi:location width="1" StartPos="12" EndPos="12"/>
+      <ddi:labl xml-lang="en">Identifying with one of the four tribes</ddi:labl>
+      <ddi:sumStat wgtd="not-wgtd" type="max">1</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="min">0</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="mean">0.208</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="mode">0.0</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="stdev">0.406</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="invd">0</ddi:sumStat>
+      <ddi:sumStat wgtd="not-wgtd" type="vald">4999</ddi:sumStat>
+      <ddi:catgry>
+        <ddi:catValu>0</ddi:catValu>
+        <ddi:labl xml-lang="en">Not identified</ddi:labl>
+        <ddi:catStat type="freq" wgtd="not-wgtd">3957</ddi:catStat>
+      </ddi:catgry>
+      <ddi:catgry>
+        <ddi:catValu>1</ddi:catValu>
+        <ddi:labl xml-lang="en">Identified with one of the four tribes</ddi:labl>
+        <ddi:catStat type="freq" wgtd="not-wgtd">1042</ddi:catStat>
+      </ddi:catgry>
+      <ddi:varFormat type="numeric" schema="other" formatname="Float">%38.0g</ddi:varFormat>
+    </ddi:var>
+  </ddi:dataDscr>
+</ddi:codeBook>

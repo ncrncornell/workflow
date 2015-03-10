@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<codeBook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:saxon="http://xml.apache.org/xslt"
+  xmlns:ns0="http://purl.org/dc/elements/1.1/"
+  xmlns:fn="http://www.w3.org/2005/xpath-functions"
+  xmlns:dcmitype="http://purl.org/dc/dcmitype/"
+  xmlns:dc="http://purl.org/dc/terms/" xmlns="ddi:codebook:2_5"
+  xsi:schemaLocation="ddi:codebook:2_5 http://www.ncrn.cornell.edu/docs/ddi/2.5.NCRN.P/schemas/codebook.xsd"
+  xml-lang="en">
+  <!--This file was produced automatically by the OpenDataForge
+ Codebook XML Generator v2014.5.14.
+
+ For more information on OpenDataForge products and
+ services,please visit www.openmetadata.org/dataforge.-->
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>pumsak.dta</titl>
+      </titlStmt>
+      <prodStmt>
+        <prodDate date="2014-12-10 09:38:22">2014-12-10 09:38:22</prodDate>
+        <software version="1.0.0">OpenDataForge:SledgeHammer</software>
+      </prodStmt>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>pumsak.dta</titl>
+      </titlStmt>
+      <prodStmt/>
+    </citation>
+    <othrStdyMat>
+      <relStdy>
+        <prov:document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+          xmlns:prov="http://www.w3.org/ns/prov#"
+          xmlns:ex="http://example.com/ns/ex#"
+          xmlns:tr="http://example.com/ns/tr#"
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:foaf="http://xmlns.com/foaf/0.1/"
+          xmlns:repeca="https://ideas.repec.org/e/#"
+          xmlns:exn="http://ced2ar.org/ns/external#"
+          xmlns:file="file:///home/vilhuber/Projects/PUMS/#"
+          xmlns:RePEc="https://ideas.repec.org/#"
+          xmlns:ced2ar="http://ced2ar.org/ns/core#"
+          xmlns:act="http://ced2ar.org/ns/activities#"
+          xmlns:github="https://github.com/ncrncornell/workflow/commit/"
+          xmlns:doi="http://dx.doi.org/10.3886/">
+
+          <!--   ENTITIES     -->
+          <prov:entity
+            prov:id="github:f7acff773673289301c19a46789f25cb89d7b569">
+            <dc:title>Program to readin and subset PUMS data</dc:title>
+            <dc:date>2014</dc:date>
+          </prov:entity>
+
+          <prov:entity prov:id="file:person.dta">
+            <dc:title>My temporary dataset</dc:title>
+            <dc:date>2014</dc:date>
+          </prov:entity>
+          <prov:entity prov:id="doi:ICPSR13568.v1">
+            <dc:title>CENSUS OF POPULATION AND HOUSING, 2000 {[UNITED STATES]}: {P}UBLIC USE MICRODATA SAMPLE: 5-PERCENT SAMPLE.</dc:title>
+            <dc:date>2014</dc:date>
+          </prov:entity>
+          <!--  AGENTS  -->
+          <prov:agent prov:id="repeca:pvi26">
+            <prov:type>prov:Person</prov:type>
+            <foaf:givenName>Lars Vilhuber</foaf:givenName>
+            <foaf:workInfoHomepage>https://ideas.repec.org/e/pvi26.html</foaf:workInfoHomepage>
+          </prov:agent>
+          <!--    ACTIVITIES  -->
+          <prov:activity prov:id="act:research"/>
+          <prov:activity prov:id="act:research-12345"/>
+          <!--    LINKS    -->
+          <prov:wasAssociatedWith>
+            <prov:activity prov:ref="act:research12345"/>
+            <prov:agent prov:ref="repeca:pvi26"/>
+            <prov:role>act:author</prov:role>
+          </prov:wasAssociatedWith>
+          <prov:wasGeneratedBy>
+            <prov:entity prov:ref="file:person.dta"/>
+            <prov:activity prov:ref="act:research12345"/>
+          </prov:wasGeneratedBy>
+          <prov:used>
+            <prov:activity prov:ref="act:research12345"/>
+            <prov:entity
+              prov:ref="github:f7acff773673289301c19a46789f25cb89d7b569"
+            />
+          </prov:used>
+          <prov:used>
+            <prov:activity prov:ref="act:research12345"/>
+            <prov:entity prov:ref="doi:ICPSR13568.v1"/>
+          </prov:used>
+        </prov:document>
+
+      </relStdy>
+    </othrStdyMat>
+  </stdyDscr>
+  <fileDscr ID="cSce0uAhLe7GRa1t">
+    <fileTxt>
+      <fileName>pumsak.dta</fileName>
+      <dimensns>
+        <caseQnty>4999</caseQnty>
+        <varQnty>6</varQnty>
+      </dimensns>
+      <fileType>Stata</fileType>
+    </fileTxt>
+  </fileDscr>
+  <dataDscr>
+    <var ID="A3nqMiiiD2JpiY6A" name="pweight" files="cSce0uAhLe7GRa1t" dcml="0">
+      <location width="4" StartPos="1" EndPos="4"/>
+      <labl xml-lang="en">Person Weight</labl>
+      <varFormat type="character" schema="other" formatname="String"
+        >%9s</varFormat>
+    </var>
+    <var ID="IvCNciI6SRRun42w" name="pweight_num" files="cSce0uAhLe7GRa1t"
+      dcml="0">
+      <location width="3" StartPos="5" EndPos="7"/>
+      <labl xml-lang="en">Person weight</labl>
+      <sumStat wgtd="not-wgtd" type="max">101</sumStat>
+      <sumStat wgtd="not-wgtd" type="min">4</sumStat>
+      <sumStat wgtd="not-wgtd" type="mean">19.789</sumStat>
+      <sumStat wgtd="not-wgtd" type="mode">8.0</sumStat>
+      <sumStat wgtd="not-wgtd" type="stdev">12.163</sumStat>
+      <sumStat wgtd="not-wgtd" type="invd">0</sumStat>
+      <sumStat wgtd="not-wgtd" type="vald">4999</sumStat>
+      <varFormat type="numeric" schema="other" formatname="Int"
+        >%10.0g</varFormat>
+    </var>
+    <var ID="v6kvCp13xSxx93eS" name="numrace" files="cSce0uAhLe7GRa1t" dcml="0">
+      <location width="1" StartPos="8" EndPos="8"/>
+      <labl xml-lang="en">Number of Major Race Groups Marked</labl>
+      <varFormat type="character" schema="other" formatname="String"
+        >%9s</varFormat>
+    </var>
+    <var ID="JI3O4X0mIGzijRdD" name="race1" files="cSce0uAhLe7GRa1t" dcml="0">
+      <location width="1" StartPos="9" EndPos="9"/>
+      <labl xml-lang="en">Race Recode 1</labl>
+      <varFormat type="character" schema="other" formatname="String"
+        >%9s</varFormat>
+    </var>
+    <var ID="u0AGKpTEsr4fpuLE" name="race2" files="cSce0uAhLe7GRa1t" dcml="0">
+      <location width="2" StartPos="10" EndPos="11"/>
+      <labl xml-lang="en">Race Recode 2</labl>
+      <varFormat type="character" schema="other" formatname="String"
+        >%9s</varFormat>
+    </var>
+    <var ID="vkYUjbJuFAnvrKVZ" name="specific_ak" files="cSce0uAhLe7GRa1t"
+      dcml="0">
+      <location width="1" StartPos="12" EndPos="12"/>
+      <labl xml-lang="en">Identifying with one of the four tribes</labl>
+      <sumStat wgtd="not-wgtd" type="max">1</sumStat>
+      <sumStat wgtd="not-wgtd" type="min">0</sumStat>
+      <sumStat wgtd="not-wgtd" type="mean">0.208</sumStat>
+      <sumStat wgtd="not-wgtd" type="mode">0.0</sumStat>
+      <sumStat wgtd="not-wgtd" type="stdev">0.406</sumStat>
+      <sumStat wgtd="not-wgtd" type="invd">0</sumStat>
+      <sumStat wgtd="not-wgtd" type="vald">4999</sumStat>
+      <catgry>
+        <catValu>0</catValu>
+        <labl xml-lang="en">Not identified</labl>
+        <catStat type="freq" wgtd="not-wgtd">3957</catStat>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl xml-lang="en">Identified with one of the four tribes</labl>
+        <catStat type="freq" wgtd="not-wgtd">1042</catStat>
+      </catgry>
+      <varFormat type="numeric" schema="other" formatname="Float"
+        >%38.0g</varFormat>
+    </var>
+  </dataDscr>
+</codeBook>
