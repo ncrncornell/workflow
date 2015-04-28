@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<prov:document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:ex="http://example.com/ns/ex#" xmlns:tr="http://example.com/ns/tr#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:repeca="https://ideas.repec.org/e/#"
+    xmlns:exn="http://ced2ar.org/ns/external#"
+    xmlns:file="file:///home/vilhuber/Projects/PUMS/#"
+    xmlns:RePEc="https://ideas.repec.org/#"
+    xmlns:ced2ar="http://ced2ar.org/ns/core#"
+    xmlns:act="http://ced2ar.org/ns/activities#">
+
+    <!--   ENTITIES     -->
+    <prov:entity prov:id="https://github.com/ncrncornell/workflow/commit/f7acff773673289301c19a46789f25cb89d7b569">
+        <dc:title>Program to readin and subset PUMS data</dc:title>
+        <dc:date>2014</dc:date>
+    </prov:entity>
+
+    <prov:entity prov:id="file:person.dta">
+        <dc:title>My temporary dataset</dc:title>
+        <dc:date>2014</dc:date>
+    </prov:entity>
+    <prov:entity prov:id="doi:10.3886/ICPSR13568.v1">
+        <dc:title>CENSUS OF POPULATION AND HOUSING, 2000 {[UNITED STATES]}:
+            {P}UBLIC USE MICRODATA SAMPLE: 5-PERCENT SAMPLE.</dc:title>
+        <dc:date>2014</dc:date>
+    </prov:entity>
+    <!--  AGENTS  -->
+    <prov:agent prov:id="repeca:pvi26">
+        <prov:type>prov:Person</prov:type>
+        <foaf:givenName>Lars Vilhuber</foaf:givenName>
+        <foaf:workInfoHomepage>https://ideas.repec.org/e/pvi26.html</foaf:workInfoHomepage>
+    </prov:agent>
+    <!--    ACTIVITIES  -->
+    <prov:activity prov:id="act:research"/>
+    <prov:activity prov:id="act:research-12345"/>
+    <!--    LINKS    -->
+    <prov:wasAssociatedWith>
+        <prov:activity prov:ref="act:research12345"/>
+        <prov:agent prov:ref="repeca:pvi26"/>
+        <prov:role>act:author</prov:role>
+    </prov:wasAssociatedWith>
+    <prov:wasGeneratedBy>
+        <prov:entity prov:ref="file:person.dta"/>
+        <prov:activity prov:ref="act:research12345"/>
+    </prov:wasGeneratedBy>
+    <prov:used>
+        <prov:activity prov:ref="act:research12345"/>
+        <prov:entity prov:ref="https://github.com/ncrncornell/workflow/commit/f7acff773673289301c19a46789f25cb89d7b569"/>
+    </prov:used>
+    <prov:used>
+        <prov:activity prov:ref="act:research12345"/>
+        <prov:entity prov:ref="doi:10.3886/ICPSR13568.v1" />
+    </prov:used>
+</prov:document>
